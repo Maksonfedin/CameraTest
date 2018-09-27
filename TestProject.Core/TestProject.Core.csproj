@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MvvmCross.Core" Version="5.7.0" />
+    <PackageReference Include="MvvmCross" Version="5.7.0" />
+    <PackageReference Include="MvvmCross.Platform" Version="5.7.0" />
+    <PackageReference Include="Plugin.Permissions" Version="3.0.0.12" />
+    <PackageReference Include="Grpc.Core" Version="1.15.0-pre1" />
+    <PackageReference Include="Grpc" Version="1.15.0-pre1" />
+    <PackageReference Include="Google.Protobuf" Version="3.6.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Carnet\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Models\" />
+    <Folder Include="Mappers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UserInteraction\Chance.MvvmCross.Plugins.UserInteraction\Chance.MvvmCross.Plugins.UserInteraction.csproj" />
+  </ItemGroup>
+</Project>
