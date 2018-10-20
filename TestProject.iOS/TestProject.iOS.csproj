@@ -156,6 +156,7 @@
     <Compile Include="Views\ViewBase.cs" />
     <Compile Include="Views\CameraView.cs" />
     <Compile Include="Views\ResultView.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestProject.Core\TestProject.Core.csproj">
